@@ -3,14 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 开启移动端的理想视口 -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- 引入页签图标，相当于./-->
+    <link rel="icon" href="<%= BASE_URL %>logo.ico">
+    <!-- 引入bootstrap.css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <!-- 引入标题 -->
+    <script src="./js/echarts.min.js"></script>
+    <title>随州专用车管理系统</title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
   </head>
   <body>
+    <!-- 当浏览器不支持js时显示下面的，基本上用不到 -->
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <!-- 一个容器 -->
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
